@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT &amp; Cybersecurity Portfolio</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23c8ff00'/><rect x='7' y='7' width='7' height='7' rx='1.5' fill='%23000'/><rect x='18' y='7' width='7' height='7' rx='1.5' fill='%23000'/><rect x='7' y='18' width='7' height='7' rx='1.5' fill='%23000'/><rect x='18' y='18' width='7' height='7' rx='1.5' fill='%23000'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
+  <nav class="navbar">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="#" class="nav-logo">
+        <div class="logo-grid">
+          <span></span><span></span>
+          <span></span><span></span>
+        </div>
+        <span class="logo-name">EMMERON F. DIMALIG</span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links">
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#credentials">Credentials</a></li>
+      </ul>
+
+      <a href="#contact" class="nav-cta">Get in touch ↗</a>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <a href="#work"        onclick="closeDrawer()">Projects</a>
+      <a href="#about"       onclick="closeDrawer()">About</a>
+      <a href="#credentials" onclick="closeDrawer()">Credentials</a>
+      <a href="#contact"     onclick="closeDrawer()">Get in touch ↗</a>
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-left">
+
+      <!-- Profile photo + breadcrumb row -->
+      <div class="hero-identity">
+        <div class="profile-photo">
+          <img src="photo.jpg" alt="Emmeron F. Dimalig" />
+        </div>
+        <div class="hero-breadcrumb">
+          <span>INFORMATION</span>
+          <span class="bc-sep">/</span>
+          <span>CYBERSECURITY</span>
+        </div>
+      </div>
+
+      <!-- Status badge -->
+      <div class="hero-badge">
+        <span class="badge-pulse"></span>
+        <span>IT &nbsp;/&nbsp; Networking &nbsp;/&nbsp; Cybersecurity</span>
+      </div>
+
+      <!-- Main headline -->
+      <h1 class="hero-headline">
+        Connected systems.<br />
+        Security by design.
+      </h1>
+
+      <!-- Sub -->
+      <p class="hero-sub">
+        I'm Emmeron F. Dimalig. I connect technology, networks, and security to
+        make complex systems work better.
+      </p>
+
+      <!-- CTAs -->
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">Explore my work</a>
+        <a href="#about" class="btn btn-ghost">View about ↗</a>
+        <a href="https://www.credly.com/users/emmerson-dimalig" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Credly ↗</a>
+      </div>
+
+      <!-- Footnote -->
+      <p class="hero-footnote">
+        <span class="dot-green"></span>
+        [Infrastructure summary. Stack or top skill.]
+      </p>
+    </div>
+
+    <!-- Terminal card -->
+    <div class="hero-right">
+      <div class="terminal-card">
+        <div class="terminal-topbar">
+          <div class="terminal-dots">
+            <span class="td red"></span>
+            <span class="td yellow"></span>
+            <span class="td green"></span>
+          </div>
+          <span class="terminal-title">[system-status]</span>
+          <span class="terminal-active">● ACTIVE</span>
+        </div>
+        <div class="terminal-body">
+
+          <div class="sys-row">
+            <div class="sys-badge it">IT</div>
+            <div class="sys-info">
+              <div class="sys-name">IT foundations</div>
+              <div class="sys-tags">
+                <span>JavaScript</span>
+                <span>HTML/CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sys-row">
+            <div class="sys-badge net">NET</div>
+            <div class="sys-info">
+              <div class="sys-name">Network infrastructure</div>
+              <div class="sys-tags">
+                <span>IP Addressing</span>
+                <span>Subnetting</span>
+                <span>VLANs</span>
+                <span>Routing</span>
+                <span>DHCP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sys-row">
+            <div class="sys-badge sec">SEC</div>
+            <div class="sys-info">
+              <div class="sys-name">Security operations</div>
+              <div class="sys-tags">
+                <span>Network Security</span>
+                <span>Threat Management</span>
+                <span>Security Practices</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 01 — DISCIPLINES -->
+  <section class="disciplines" id="about">
+    <div class="container">
+      <div class="section-eyebrow reveal">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">01 / DISCIPLINES</span>
+      </div>
+      <h2 class="section-title reveal reveal-d1">From the help desk to the perimeter.</h2>
+
+      <div class="disc-grid">
+
+        <div class="disc-card reveal reveal-d1">
+          <div class="disc-num">01</div>
+          <h3 class="disc-name">Information technology</h3>
+          <p class="disc-desc">
+            Reliable systems with strong foundations: thoughtful configuration,
+            support, and documentation.
+          </p>
+          <div class="tag-row">
+            <span>JavaScript</span>
+            <span>HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="disc-card reveal reveal-d2">
+          <div class="disc-num">02</div>
+          <h3 class="disc-name">Networking</h3>
+          <p class="disc-desc">
+            Connecting people and services through well-structured, resilient
+            network infrastructure.
+          </p>
+          <div class="tag-row">
+            <span>IP Addressing</span>
+            <span>Subnetting</span>
+            <span>VLANs</span>
+            <span>Routing</span>
+            <span>DHCP</span>
+          </div>
+        </div>
+
+        <div class="disc-card reveal reveal-d3">
+          <div class="disc-num">03</div>
+          <h3 class="disc-name">Cybersecurity</h3>
+          <p class="disc-desc">
+            A defense-in-depth mindset for understanding risk, reducing exposure,
+            and protecting systems.
+          </p>
+          <div class="tag-row">
+            <span>Network Security</span>
+            <span>Threat Management</span>
+            <span>Security Practices</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       02 — SELECTED WORK
+  ══════════════════════════════════════ -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">02 / SELECTED WORK</span>
+        <span class="eyebrow-right">[Project count] projects · [Skill, tag, keyword]</span>
+      </div>
+      <h2 class="section-title">A closer look at the work.</h2>
+
+      <div class="projects-grid">
+
+        <!-- ── Project 1: Eduquest ── -->
+        <article class="proj-card">
+          <div class="proj-preview eduquest-preview">
+            <img class="project-image" src="eduquest.jpg" alt="Eduquest sign-in screen" />
+          </div>
+          <div class="proj-meta">
+            <div class="proj-cat">CAPSTONE PROJECT</div>
+            <h3 class="proj-title">Eduquest</h3>
+            <p class="proj-desc">
+              A comprehensive platform for instructors to create, manage, and
+              track student quizzes with real-time analytics.
+            </p>
+            <a href="https://github.com/GemsLister/eduquest.git" class="proj-link" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+          </div>
+        </article>
+
+        <!-- ── Project 2: WLAN Configuration ── -->
+        <article class="proj-card">
+          <div class="proj-preview project-image-preview">
+            <img class="project-image" src="wlan-configuration.jpg" alt="WLAN Configuration in Cisco Packet Tracer" />
+          </div>
+          <div class="proj-meta">
+            <div class="proj-cat">NETWORKING</div>
+            <h3 class="proj-title">WLAN Configuration</h3>
+            <p class="proj-desc">
+              Configured WLAN using Cisco Packet Tracer.
+            </p>
+            <a href="#" class="proj-link">View case study ↗</a>
+          </div>
+        </article>
+
+        <!-- ── Project 3: Complex DHCPv4 Network ── -->
+        <article class="proj-card">
+          <div class="proj-preview project-image-preview">
+            <img class="project-image" src="complex-dhcpv4-network.jpg" alt="Complex DHCPv4 network in Cisco Packet Tracer" />
+          </div>
+          <div class="proj-meta">
+            <div class="proj-cat">NETWORKING</div>
+            <h3 class="proj-title">Complex DHCPv4 Network</h3>
+            <p class="proj-desc">
+              Configured a complex DHCPv4 network using Cisco Packet Tracer.
+            </p>
+            <a href="#" class="proj-link">View case study ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       03 — PROCESS
+  ══════════════════════════════════════ -->
+  <section class="process">
+    <div class="container">
+      <div class="section-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">03 / HOW I WORK &amp; CONNECT</span>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-num">01</div>
+          <h3 class="process-name">Understand</h3>
+          <p class="process-desc">Define the environment, the people, and the problem.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">02</div>
+          <h3 class="process-name">Build</h3>
+          <p class="process-desc">Design a practical solution with security in mind.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">03</div>
+          <h3 class="process-name">Validate</h3>
+          <p class="process-desc">Test assumptions, check behavior, and refine.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">04</div>
+          <h3 class="process-name">Document</h3>
+          <p class="process-desc">Make the outcome clear, repeatable, and maintainable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       04 — CREDENTIALS
+  ══════════════════════════════════════ -->
+  <section class="credentials" id="credentials">
+    <div class="container">
+      <div class="section-eyebrow cred-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">04 / CONTINUOUS LEARNING</span>
+        <h2 class="cred-inline-title">Certificates</h2>
+      </div>
+
+      <div class="cred-grid">
+
+        <div class="cred-card">
+          <div class="cred-num">04 / CERTIFICATE</div>
+          <div class="cred-name">CCNA: Introduction to Networks</div>
+          <div class="cred-meta">Date · May 16, 2025</div>
+          <a class="certificate-link" href="ccna-introduction-to-networks.pdf" target="_blank" rel="noopener noreferrer">
+            View certificate ↗
+          </a>
+        </div>
+
+        <div class="cred-card">
+          <div class="cred-num">05 / CERTIFICATE</div>
+          <div class="cred-name">CCNA: Switching, Routing, and Wireless Essentials</div>
+          <div class="cred-meta">Date · Dec 23, 2025</div>
+          <a class="certificate-link" href="ccna-switching-routing-wireless-essentials.pdf" target="_blank" rel="noopener noreferrer">
+            View certificate ↗
+          </a>
+        </div>
+
+        <div class="cred-card">
+          <div class="cred-num">06 / [ANOTHER PATHWAY]</div>
+          <div class="cred-name">[Diploma or pathway]</div>
+          <div class="cred-meta">Institution or context<br />Obtained or expected</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       05 — CONTACT / CTA
+  ══════════════════════════════════════ -->
+  <section class="cta-section" id="contact">
+    <div class="container cta-inner">
+
+      <div class="cta-left">
+        <div class="section-eyebrow">
+          <span class="eyebrow-line"></span>
+          <span class="eyebrow-text">05 / LET'S CONNECT</span>
+        </div>
+        <h2 class="cta-headline">
+          Let's build something<br />more resilient.
+        </h2>
+        <p class="cta-sub">Have a project or want to collaborate?</p>
+      </div>
+
+      <div class="cta-right">
+        <div class="cta-email-row">
+          <span class="cta-email">edimalig4@gmail.com</span>
+          <button class="cta-copy-btn" id="copyBtn">Copy ↗</button>
+        </div>
+        <div class="cta-links">
+          <a href="https://www.linkedin.com/in/emmerson-dimalig-89bbba449" class="cta-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/EmmersonDimalig" class="cta-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 Emmeron F. Dimalig</span>
+      <span>Information Technology · Networking · Cybersecurity</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
