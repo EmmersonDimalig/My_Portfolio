@@ -252,7 +252,7 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  align-items: center;
+  align-items: start;
   min-height: calc(100vh - 54px);
   max-width: var(--maxw);
   margin: 0 auto;
@@ -269,8 +269,8 @@ ul { list-style: none; }
 
 /* Profile photo */
 .profile-photo {
-  width: 52px;
-  height: 52px;
+  width: 92px;
+  height: 92px;
   border-radius: 10px;
   background: var(--bg3);
   border: 1px solid var(--border2);
@@ -388,9 +388,9 @@ ul { list-style: none; }
   border: 1px solid var(--border2);
   border-radius: var(--r);
   overflow: hidden;
-  width: fit-content;
+  width: 100%;
   max-width: 100%;
-  justify-self: end;
+  justify-self: stretch;
 }
 .terminal-topbar {
   display: flex;
